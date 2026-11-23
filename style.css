@@ -1,0 +1,240 @@
+/*********** GENERAL ***********/
+
+body {
+    margin: 0;
+    background-color: #181214;
+    color: #f2eee8;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    padding: 24px 16px;
+    text-align: center;
+    border-bottom: 1px solid #d4af6a;
+}
+
+/* General links */
+nav a {
+    margin: 0px 30px;
+    padding: 4px 0;
+}
+
+a {
+    color: #e0bc7b;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8c5e09;
+    text-decoration: none;
+}
+
+/* Main title decoration*/
+h1 {
+    color: #e0bc7b;
+    font-size: 45px;
+}
+
+
+/*********** MAIN CONTAINER **********/
+
+/* Main title decoration */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+/* Secondary title decoration*/
+h2 {
+    color: #d4af6a;
+    font-size: 24px;
+}
+
+/* Footer decoration */
+footer {
+    padding: 16px;
+    background-color: #10090b;
+    text-align: center;
+}
+
+
+/******** HOME PAGE *********/
+
+/* Image Guys drinkiing settings*/
+img {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.imageoption{
+    display: flex; /*Cards horizontal position*/
+    gap: 20px; /* Separation cards*/
+}
+
+/* Options Cards Settings */
+.option {
+    display: flex;
+    border: 1px solid #d4af6a86;
+    text-align: center;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.option:hover{
+    transform: scale(1.05);
+}
+
+/* Options Links */
+.option a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    flex: 1;
+    height: 200px;
+    
+    /* Glass Effect. */
+    background: rgba(170, 92, 92, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+
+
+/********** COCKTAIL & WINE PAGE **********/
+
+/* Width limit */
+.cocktails-page {
+    max-width: 1000px;
+}
+
+/* Title of the sectioin*/
+.cocktails-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Imagen left position */
+.cocktail {
+    display: flex;
+    align-items: center; /* Vertical position */
+    gap: 40px;
+
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #d4af6a9a;
+}
+
+/* Imagen right position */
+.cocktail-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image cocktail settings */
+.cocktail-image {
+    width: 45%;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #d4af6a44;
+}
+
+/* Title of the cocktail */
+.cocktail-description h2 {
+    margin-bottom: 15px;
+    color: #d4af6a;
+}
+
+/* Title of the cocktail ingredients */
+.cocktail-description h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #e0bc7b;
+    font-size: 18px;
+}
+
+.cocktail-description p {
+    margin-top: 30px;
+}
+
+.cocktail-description ul {
+    padding-left: 20px; /* lateral space */
+}
+
+.cocktail-description li {
+    margin-bottom: 6px; /* Space between lines */
+}
+
+
+/********* CONTACT FORM **********/
+
+/* Size of the form */
+.booking-form {
+    max-width: 500px;
+    margin: 24px auto;
+}
+
+
+/* Box-input titles style*/
+.booking-form label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    color: #e0bc7b;
+}
+
+/* Input Box style */
+.booking-form input,
+.booking-form textarea {
+    box-sizing: border-box; /* Permit modify the size of the boxes */
+    width: 100%;
+    height: 35px;
+
+    border: 2px solid #d4af6a;
+    border-radius: 6px;
+    background-color: #c7c2bb;
+
+    color: #121812; /* Text color */
+}
+
+/* Input Box Reason style */
+.booking-form textarea {
+    resize: none;
+    height: 100px;
+    overflow-y: none;
+}
+
+
+/* Highlight in input boxes*/
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: 1px solid #e0bd7b81;
+    outline-offset: 4px; /* Highlight in input boxes*/
+}
+
+/* Submited bottom settings*/
+.booking-form button {
+    margin-top: 24px;
+    padding: 12px 20px;
+    border: none; /*ugly border*/
+    border-radius: 5px;
+    background-color: #d4af6a;
+    color: #181214;
+    font: inherit;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #6c5f44;
+}
+
+
+
+
