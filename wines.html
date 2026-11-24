@@ -34,7 +34,7 @@
             </p>
         </section>
 
-        <!-- Data base products -->
+        <!-- Container where JavaScript will display the wines -->
         <section id="products"></section>
     </main>
 
@@ -42,7 +42,12 @@
         <p>Pennylane, Dublin</p>
         <a href="https://www.instagram.com/pennylane_dublin">Follow us in Instagram</a>
     </footer>
-</body>
-<script src="products.js"></script>
+
+    <!-- Load the JavaScript file that gets products from MySQL -->
+    <!-- Load JavaScript after the HTML content -->
+    <!-- This script gets the wines from our Express API -->
+    <!-- and displays them inside the products section -->
+    <script src="products.js"></script>
 
 </html>
+</body>

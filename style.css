@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #8c5e09;
     text-decoration: none;
 }
@@ -70,9 +70,11 @@ img {
     margin-top: 20px;
 }
 
-.imageoption{
-    display: flex; /*Cards horizontal position*/
-    gap: 20px; /* Separation cards*/
+.imageoption {
+    display: flex;
+    /*Cards horizontal position*/
+    gap: 20px;
+    /* Separation cards*/
 }
 
 /* Options Cards Settings */
@@ -85,7 +87,7 @@ img {
     transition: transform 0.3s ease;
 }
 
-.option:hover{
+.option:hover {
     transform: scale(1.05);
 }
 
@@ -100,7 +102,7 @@ img {
 .option {
     flex: 1;
     height: 200px;
-    
+
     /* Glass Effect. */
     background: rgba(170, 92, 92, 0.08);
     backdrop-filter: blur(12px);
@@ -124,7 +126,8 @@ img {
 /* Imagen left position */
 .cocktail {
     display: flex;
-    align-items: center; /* Vertical position */
+    align-items: center;
+    /* Vertical position */
     gap: 40px;
 
     margin-bottom: 40px;
@@ -165,11 +168,13 @@ img {
 }
 
 .cocktail-description ul {
-    padding-left: 20px; /* lateral space */
+    padding-left: 20px;
+    /* lateral space */
 }
 
 .cocktail-description li {
-    margin-bottom: 6px; /* Space between lines */
+    margin-bottom: 6px;
+    /* Space between lines */
 }
 
 
@@ -193,7 +198,8 @@ img {
 /* Input Box style */
 .booking-form input,
 .booking-form textarea {
-    box-sizing: border-box; /* Permit modify the size of the boxes */
+    box-sizing: border-box;
+    /* Permit modify the size of the boxes */
     width: 100%;
     height: 35px;
 
@@ -201,7 +207,8 @@ img {
     border-radius: 6px;
     background-color: #c7c2bb;
 
-    color: #121812; /* Text color */
+    color: #121812;
+    /* Text color */
 }
 
 /* Input Box Reason style */
@@ -216,14 +223,16 @@ img {
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 1px solid #e0bd7b81;
-    outline-offset: 4px; /* Highlight in input boxes*/
+    outline-offset: 4px;
+    /* Highlight in input boxes*/
 }
 
 /* Submited bottom settings*/
 .booking-form button {
     margin-top: 24px;
     padding: 12px 20px;
-    border: none; /*ugly border*/
+    border: none;
+    /*ugly border*/
     border-radius: 5px;
     background-color: #d4af6a;
     color: #181214;
@@ -237,4 +246,76 @@ img {
 
 
 
+/* PRODUCT CATALOGUE */
+/* Display products in a responsive grid */
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
 
+/* Style each product card */
+/* Style each product card */
+#products .product {
+    background-color: #241b1d;
+    border: 1px solid #c9a66b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    /* Arrange the content vertically */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep all wine images at a consistent size */
+#products .product img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Style the product name */
+#products .product h3 {
+    color: #d9b77a;
+    margin-top: 15px;
+}
+
+/* Style the product description and price */
+#products .product p {
+    margin: 12px 0;
+}
+
+/* Style the Add to Basket button */
+#products .product button {
+    background-color: #d9b77a;
+    color: #1a1214;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    /* Push the button to the bottom of the product card */
+    margin-top: auto;
+}
+
+/* Change the button colour when the mouse is over it */
+#products .product button:hover {
+    background-color: #f0d39b;
+}
+
+/* Show fewer columns on smaller screens */
+@media (max-width: 800px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Show one product per row on mobile phones */
+@media (max-width: 500px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}
