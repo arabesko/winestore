@@ -256,7 +256,6 @@ img {
 }
 
 /* Style each product card */
-/* Style each product card */
 #products .product {
     background-color: #241b1d;
     border: 1px solid #c9a66b;
@@ -318,4 +317,68 @@ img {
     #products {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+
+
+
+/* REGISTRATION FORM */
+
+/* Centre the registration section */
+.register-section {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #241b1d;
+    border: 1px solid #c9a66b;
+    border-radius: 10px;
+}
+
+/* Centre the title and introductory text */
+.register-section h2,
+.register-section p {
+    text-align: center;
+}
+
+/* Arrange the form elements vertically */
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style the field labels */
+#registerForm label {
+    color: #d9b77a;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+#registerForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #1a1415;
+    color: white;
+    border: 1px solid #c9a66b;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the registration button */
+#registerForm button {
+    background-color: #d9b77a;
+    color: #1a1415;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Change the button colour on hover */
+#registerForm button:hover {
+    background-color: #f0d39b;
 }
