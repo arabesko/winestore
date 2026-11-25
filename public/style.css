@@ -324,10 +324,11 @@ img {
 
 
 
-/* REGISTRATION FORM */
+/********** REGISTRATION & LOGIN FORMS **********/
 
-/* Centre the registration section */
-.register-section {
+/* Centre the registration and login sections */
+.register-section,
+.login-section {
     max-width: 450px;
     margin: 40px auto;
     padding: 30px;
@@ -338,25 +339,30 @@ img {
 
 /* Centre the title and introductory text */
 .register-section h2,
-.register-section p {
+.register-section p,
+.login-section h2,
+.login-section p {
     text-align: center;
 }
 
 /* Arrange the form elements vertically */
-#registerForm {
+#registerForm,
+#loginForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 /* Style the field labels */
-#registerForm label {
+#registerForm label,
+#loginForm label {
     color: #d9b77a;
     font-weight: bold;
 }
 
 /* Style the input fields */
-#registerForm input {
+#registerForm input,
+#loginForm input {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
@@ -367,8 +373,9 @@ img {
     margin-bottom: 10px;
 }
 
-/* Style the registration button */
-#registerForm button {
+/* Style the form buttons */
+#registerForm button,
+#loginForm button {
     background-color: #d9b77a;
     color: #1a1415;
     border: none;
@@ -379,6 +386,7 @@ img {
 }
 
 /* Change the button colour on hover */
-#registerForm button:hover {
+#registerForm button:hover,
+#loginForm button:hover {
     background-color: #f0d39b;
 }
