@@ -24,6 +24,35 @@
         </nav>
     </header>
 
+    <!-- Shopping basket section -->
+    <main class="basket-section">
+
+        <h2>Your Shopping Basket</h2>
+
+        <!-- Container for basket products -->
+        <div id="basket-items"></div>
+
+        <!-- Display the total basket price -->
+        <div class="basket-summary">
+            <h3>Total: €<span id="basket-total">0.00</span></h3>
+
+            <!-- Button to complete the purchase -->
+            <button id="checkout-button">Proceed to Checkout</button>
+        </div>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>Pennylane | Dublin, Ireland</p>
+    </footer>
+
+    <!-- Manage the user session -->
+    <script src="session.js"></script>
+
+    <!-- Manage the shopping basket -->
+    <script src="basket.js"></script>
+
 </body>
 
 </html>

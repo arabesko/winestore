@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pennylane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main navigation -->
+    <header>
+        <h1>Pennylane</h1>
+        <p>Good drinks. Great company.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="wines.html">Wine Shop</a>
+            <a href="booking.html">Contact</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="basket.html">Basket</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Checkout section -->
+        <section class="checkout-section">
+
+            <h2>Checkout</h2>
+
+            <!-- Selected products -->
+            <div id="checkout-items"></div>
+
+            <!-- Order summary -->
+            <div class="checkout-summary">
+
+                <h3>Total: €<span id="checkout-total">0.00</span></h3>
+
+                <button id="place-order-button" disabled>
+                    Place Order
+                </button>
+
+                <!-- Order confirmation message -->
+                <p id="order-message"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Pennylane - Dublin, Ireland</p>
+    </footer>
+
+    <script src="session.js"></script>
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

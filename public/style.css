@@ -321,9 +321,6 @@ img {
 
 
 
-
-
-
 /********** REGISTRATION & LOGIN FORMS **********/
 
 /* Centre the registration and login sections */
@@ -389,4 +386,87 @@ img {
 #registerForm button:hover,
 #loginForm button:hover {
     background-color: #f0d39b;
+}
+
+/* Shopping basket section */
+.basket-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Individual basket product */
+.basket-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #241b1d;
+    border: 1px solid #c9a66b;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Basket product image */
+.basket-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Basket product information */
+.basket-details {
+    flex: 1;
+}
+
+/* Basket summary */
+.basket-summary {
+    text-align: right;
+    border-top: 1px solid #c9a66b;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+/* Total basket price */
+.basket-summary h3 {
+    color: #c9a66b;
+    font-size: 26px;
+}
+
+/* Checkout button */
+#checkout-button {
+    background-color: #c9a66b;
+    color: #191415;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Checkout button hover effect */
+#checkout-button:hover {
+    background-color: #e0bf85;
+}
+
+/* Checkout button hover effect */
+#checkout-button:hover {
+    background-color: #e0bf85;
+}
+
+/* Remove product button */
+.remove-button {
+    background-color: transparent;
+    color: #c9a66b;
+    border: 1px solid #c9a66b;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Remove button hover effect */
+.remove-button:hover {
+    background-color: #c9a66b;
+    color: #191415;
 }

@@ -409,6 +409,53 @@ app.get("/api/basket", (req, res) => {
 
 });
 
+// Create a route to remove products from the basket
+app.post("/api/basket/remove", (req, res) => {
+
+    // Check if the user is authenticated
+    if (!req.session.userId) {
+        return res.status(401).json({
+            message: "Please log in to remove products"
+        });
+    }
+
+    // Receive the product ID
+    const productId = req.body?.productId;
+
+    // Validate the product ID
+    if (!Number.isInteger(productId) || productId <= 0) {
+        return res.status(400).json({
+            message: "Invalid product ID"
+        });
+    }
+
+    // Find the product position in the basket
+    const index = req.session.basket.findIndex(
+        item => item.productId === productId
+    );
+
+    // Check if the product exists in the basket
+    if (index === -1) {
+        return res.status(404).json({
+            message: "Product not found in basket"
+        });
+    }
+
+    // Check if the product has more than one unit
+    if (req.session.basket[index].quantity > 1) {
+        // Decrease the product quantity by one
+        req.session.basket[index].quantity--;
+    } else {
+        // Remove the product when only one unit remains
+        req.session.basket.splice(index, 1);
+    }
+
+    // Confirm that one unit was removed successfully
+    res.status(200).json({
+        message: "Product removed from basket"
+    });
+
+});
 
 // Start the Express server
 app.listen(PORT, () => {
